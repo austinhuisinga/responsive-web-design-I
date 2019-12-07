@@ -64,21 +64,7 @@ h1, h2, h3, h4, h5 {
 /* End of reset. Start of Index. */
 
 .container {
-
-}
-
-@media(max-width: 800px) {
-  .container {
-    width: 800px;
-    background: gray;
-  }
-}
-
-@media(max-width: 500px) {
-  .container {
-    width: 500px;
-    background: dodgerblue;
-  }
+  
 }
 
 nav {
@@ -198,6 +184,7 @@ nav {
 
 footer {
   text-align: center;
+  max-width: 100%;
 }
 /* End index.html styling. Start services.html styling.*/
 
@@ -302,3 +289,68 @@ form button {
 }
 
 /* end of contact.html */
+
+
+
+@media(max-width: 800px) {
+  .container {
+    max-width: 800px;
+    margin-bottom: 2%;
+  }
+
+  /* Just spent an hour working on getting header tablet-friendly. I'll get help Monday. */
+  /* header nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  nav a {
+
+  } */
+
+  .head-img {
+    display:none;
+  }
+
+  .head-2-plus-head-img .head-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items:center;
+    margin-bottom: 35px;
+    margin-top: 35px;
+  }
+
+  .head-2-plus-head-img .head-2 h1 {
+    font-size: 70px;
+  }
+  
+  .head-2-plus-head-img .head-2 a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .f-a {
+    border-top: 2px solid black;
+    padding: 5% 1% 0 1%;
+  }
+
+  .middle-img {
+    width: 94%;
+  }
+
+  .contact {
+    border-top: 2px solid black;
+    padding-top: 5%;
+    margin-top: 6%;
+
+}
+
+@media(max-width: 500px) {
+  .container {
+    width: 500px;
+    background: dodgerblue;
+  }
+}
