@@ -70,10 +70,17 @@ h1, h2, h3, h4, h5 {
 nav {
 	display: flex;
 	justify-content: space-evenly;
-	align-items: flex-end;
-	flex-flow: row wrap;
-	margin-bottom: 3%;
+	align-items: center;
+	margin: 3% 0 3% 0;
 }
+
+
+/* nav .hov{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+} */
+
 .hov{
   color: lightgray;
   text-decoration: none;
@@ -242,14 +249,16 @@ footer {
 
 .bottom-sec-container div {
 	max-width: 45%;
+	display: flex;
+	flex-direction: column;
 }
 
 ul {
 	list-style-type: square;
 	line-height: 175%;
 	margin-left: 25px;
-	}
-	
+}
+
 	/* Contact */
 
 .div-contact-header-img {
@@ -295,7 +304,7 @@ form button {
 @media(max-width: 800px) {
   .container {
     max-width: 800px;
-    margin-bottom: 2%;
+		margin-bottom: 2%;
   }
 
   /* Just spent an hour working on getting header tablet-friendly. I'll get help Monday. */
@@ -344,7 +353,10 @@ form button {
   .contact {
     border-top: 2px solid black;
     padding-top: 5%;
-    margin-top: 6%;
+		margin-top: 6%;
+	}
+
+	/* end of index/start of services */
 
 }
 
@@ -375,5 +387,32 @@ form button {
 		margin-top: 0;
 	}
 	
+/* Begin services */
+
+	.services-list-container {
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.services-list-container div {
+		width: 90%;
+		margin: 3% auto;
+	}
+
+	.services-info-img {
+		display: none;
+	}
+
+	.bottom-sec-container div{
+		max-width: 90%;
+		
+		
+	}
+	
+	.bottom-sec-container {
+		max-width: 90%;
+		margin: 3% auto;
+	}
+
 
 }
