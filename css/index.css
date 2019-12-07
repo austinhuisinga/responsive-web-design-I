@@ -350,7 +350,30 @@ form button {
 
 @media(max-width: 500px) {
   .container {
-    width: 500px;
-    background: dodgerblue;
-  }
+    max-width: 500px;
+		margin-bottom: 4%;
+	}
+
+	.f-v {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.f-v div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.f-v div div {
+		padding-top: 7%;
+		padding-bottom: 7%;
+	}
+
+	.contact {
+		padding-top: 7%;
+		padding-bottom: 3%;
+		margin-top: 0;
+	}
+	
+
 }
