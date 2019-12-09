@@ -79,13 +79,6 @@ nav {
 	justify-content: space-evenly
 }
 
-
-/* nav .hov{
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-} */
-
 .hov{
   color: lightgray;
   text-decoration: none;
