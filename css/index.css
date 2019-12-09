@@ -69,9 +69,14 @@ h1, h2, h3, h4, h5 {
 
 nav {
 	display: flex;
-	justify-content: space-evenly;
 	align-items: center;
 	margin: 3% 0 3% 0;
+}
+
+.links {
+	display: flex;
+	width: 80%;
+	justify-content: space-evenly
 }
 
 
@@ -93,7 +98,7 @@ nav {
 	animation-fill-mode: forwards;
 	border: 1px solid white;
 	padding: 5px;
-	border-radius: 20%;
+	border-radius: 10px;
 }
 
 @keyframes bg {
@@ -305,19 +310,24 @@ form button {
   .container {
     max-width: 800px;
 		margin-bottom: 2%;
-  }
+	}
+	
+	nav {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 
-  /* Just spent an hour working on getting header tablet-friendly. I'll get help Monday. */
-  /* header nav {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
+	.links {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 5% 0 5% 0;
+		width: 100%;
+	} 
+	.links a {
+		font-size: 1.05rem;
+	}
 
-  nav a {
 
-  } */
 
   .head-img {
     display:none;
@@ -364,6 +374,20 @@ form button {
   .container {
     max-width: 500px;
 		margin-bottom: 4%;
+	}
+
+	.links  {
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid black;
+		padding-bottom: 0;
+	}
+
+	.links .hov {
+		border-top: 1px solid black;
+		text-align: center;
+		padding: 5% 0 5% 0;
+		border-radius: 0;
 	}
 
 	.f-v {
@@ -413,6 +437,4 @@ form button {
 		max-width: 90%;
 		margin: 3% auto;
 	}
-
-
 }
